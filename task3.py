@@ -1,7 +1,7 @@
 class BMI_Calculator:
     def __init__(self, berat, tinggi):
         self.set_berat(berat)  #Berat dalam kilogram
-        self.set_tinggi(tinggi)  #Tinggi dalam sentimeter
+        self.set_tinggi(tinggi)  #Tinggi dalam meter
 
     def set_berat(self, berat):
         if berat <= 0:
