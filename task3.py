@@ -24,7 +24,7 @@ class BMI_Calculator:
 
 
 if __name__ == "__main__":
-    #Input berat dalam kilogram dan tinggi dalam sentimeter
+    #Input berat dalam kilogram dan tinggi dalam meter
     berat = float(input("Masukkan berat dalam kg (contoh: 88): "))
     tinggi = float(input("Masukkan tinggi dalam m (contoh: 1.80): "))
 
