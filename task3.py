@@ -20,14 +20,13 @@ class BMI_Calculator:
         return self._tinggi
 
     def BMI_Value(self):
-        tinggi_cm = self.get_tinggi() / 100  #Mengonversi tinggi dari meter ke senti
-        return self.get_berat() / (tinggi_cm ** 2)
+        return self.get_berat() / (self.get_tinggi() ** 2)
 
 
 if __name__ == "__main__":
     #Input berat dalam kilogram dan tinggi dalam sentimeter
     berat = float(input("Masukkan berat dalam kg (contoh: 88): "))
-    tinggi = float(input("Masukkan tinggi dalam cm (contoh: 180): "))
+    tinggi = float(input("Masukkan tinggi dalam m (contoh: 1.80): "))
 
     #Membuat objek BMI_Calculator dengan nilai berat dan tinggi yang dimasukkan
     person = BMI_Calculator(berat, tinggi)
